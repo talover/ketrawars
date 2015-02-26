@@ -1,0 +1,1277 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Philosopher-bold';
+    src: url('../fonts/Philosopher-Bold.ttf')  format('truetype');
+}
+
+html {
+    color: #675627;
+    font-size: 12px;
+    font-family: "Arial";
+    -webkit-font-smoothing: antialiased;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+* {
+   -moz-box-sizing: border-box;  
+   -webkit-box-sizing: border-box;  
+    box-sizing: border-box;  
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+a{
+    color: #f96e08;
+    outline: none;
+    font-size: 12px;
+}
+a:hover{
+    text-decoration: none;
+}
+body.ketra_main{
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+body.ketra_cp{
+    background-image: url(../img/cp_back.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.wrapper{
+    width: 1084px;
+    margin: 0px auto;
+}
+
+
+/****[ HEADER ]****/
+#header{
+
+}
+#header .header-vote{
+    width: 92px;
+    float: left;
+    margin: 23px 0px 0px -5px;
+}
+#header .header-vote .howto{
+    text-transform: uppercase;
+    font-size: 8px;
+    padding-left: 3px;
+    letter-spacing: .04em;
+}
+#header .header-vote .vote{
+    display: block;
+    margin-top: 6px;
+}
+#header .header-lang{
+    background-image: url(../img/lang-back.png);
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 146px;
+    float: right;
+    margin: -12px 54px 0px 0px;
+    padding: 66px 0px 0px 40px;
+}
+#header .header-lang > a{
+    width: 53px;
+    height: 44px;
+    background-image: url(../img/lang.png);
+    background-repeat: no-repeat;
+    float: left;
+    opacity: .5;
+    transition: .2s ease;
+}
+#header .header-lang > a.active,
+#header .header-lang > a:hover{
+    opacity: 1;
+}
+#header .header-lang .ru{
+    background-position: -53px 0px;
+}
+#header .header-lang .en{
+    background-position: 0px 0px;
+}
+
+
+/****[ CONTENT ]****/
+#content{
+    padding-top: 282px;
+
+    padding-bottom: 96px;
+}
+#content .left-sidebar{
+    float: left;
+    width: 310px;
+    /* padding-left: 100px; */
+    overflow: hidden;
+}
+#content .right-sidebar{
+    float: right;
+    width: 291px;
+}
+#content .main{
+    width: 482px;
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/****[ LEFT SIDEBAR ]****/
+.left-sidebar .forum{
+    background: url(../img/forum.png) no-repeat;
+    width: 147px;
+    height: 153px;
+    display: block;
+    margin: 0px 0px 0px 91px;
+    transition: .2s ease;
+}
+.left-sidebar .forum:hover{
+    background: url(../img/forum_hover.png) no-repeat;
+}
+.left-sidebar .left-menu-wrap{
+    background: url(../img/left-menu.png) no-repeat 0px -80px;
+    margin: -36px 0px 0px 77px;
+    padding: 29px 0 70px 0;
+}
+.left-sidebar .top-side{
+    background: url(../img/left-menu-top.png) no-repeat 0px 0px;
+    width: 210px;
+    height: 113px;
+    margin: 0px 0px 0px 35px;
+    padding: 24px 0px 0px 42px;
+}
+.left-sidebar .top-side > a{
+    background: url(../img/left-button.png) no-repeat 0 0;
+    font-family: "Philosopher-bold";
+    text-shadow: 0 0 5px rgba(201,195,232,.75);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 135px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    /*margin-top: 2;*/
+    transition: .2s ease;
+}
+.left-sidebar .top-side > a:hover{
+    color: #fff;
+    background: url(../img/left-button-a.png) no-repeat 0 0px;
+    /*background-color: rgba(178,29,255,.65);*/
+    /*-webkit-box-shadow: 0 0 5px rgba(153,88,172,.59);*/
+    /*-moz-box-shadow: 0 0 5px rgba(153,88,172,.59);*/
+    /*box-shadow: 0 0 5px rgba(153,88,172,.59);*/
+    /*background-position: 0px -31px;*/
+}
+.left-sidebar .top-side .home{
+    color: #f96e08;
+    background-position: 0px 0px;
+}
+.left-sidebar .top-side .conn{
+    /*color: #fff;*/
+    /*background-position: 0px -31px;*/
+    /*margin-top: 4px;*/
+}
+.left-sidebar .main-menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0px 0px 31px;
+    position: relative;
+}
+.left-sidebar .main-menu li{
+    padding-left: 61px;
+    margin-bottom: 9px;
+    position: relative;
+    height: 16px;
+}
+/*.left-sidebar .main-menu li.active{
+    margin-top: 0px;
+    margin-bottom: 0;
+}*/
+.left-sidebar .main-menu li .arrow{
+    
+}
+.main-menu-slide{
+    position: relative;
+}
+.main-menu-slide .arrow{
+    background: url(../img/left-arrow.png) no-repeat left center;
+    width: 56px;
+    height: 37px;
+    position: absolute;
+    left: 32px;
+    margin-top: -12px;
+    top: 50%;
+    transition: .2s ease;
+    display: none;
+    opacity: 1;
+}
+.left-sidebar .main-menu li:hover .arrow{
+}
+.left-sidebar .main-menu li a{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #4c3d2f;
+    font-family: "Philosopher";
+    /* line-height: 17px; */
+    text-decoration: none;
+    display: block;
+    transition: .2s ease;
+}
+.left-sidebar .main-menu li:hover a{
+    text-shadow: 0 0px 5px rgba(255, 176, 5, .25);
+    font-size: 14px;
+    color: #f96e08;
+    padding-left: 4px;
+}
+.left-sidebar .winners{
+    margin: 102px 0px 0px 105px;
+}
+.left-sidebar .winners h4{
+    text-shadow: 1px 1px 1px #110c00;
+    color: #ffffd8;
+    font-family: "Philosopher";
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .04em;
+    padding-left: 11px;
+    opacity: .9;
+}
+.left-sidebar .winners-block{
+    margin: 41px 0px 0px 0px;
+}
+.winners-block .tabs-content{
+    width: 205px;
+    overflow: hidden;
+    height: 238px;
+}
+.winners-block .tabs-content .tab{
+    display: none;
+}
+.winners-block .tabs-content .tab.open{
+}
+.left-sidebar .winners table{
+    width: 95%;
+    margin-left: 2px;
+}
+.left-sidebar .winners th{
+    color: #8d8668;
+    font-size: 12px;
+    font-family: "Times New Roman", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    width: 100px;
+    padding: 0px 0px 22px 0px;
+}
+.left-sidebar .winners th + th{
+    width: 27px;
+
+    text-align: center;
+    color: #534e3b;
+}
+.left-sidebar .winners td{
+    font-size: 11px;
+    color: #6d5236;
+    text-align: left;
+    padding: 0px 0px 6px 0px;
+}
+.left-sidebar .winners td + td{
+    text-align: center;
+
+}
+.left-sidebar .winners tbody tr:first-child td{
+    color: #f96e08;
+}
+.left-sidebar .winners .tab-link{
+    margin-top: 8px;
+
+}
+.left-sidebar .winners .tab-link > a{
+    font-size: 11px;
+    color: #8c8567;
+    text-decoration: none;
+    margin-right: 7px;
+    opacity: .6;
+}
+.left-sidebar .winners .tab-link > a.active,
+.left-sidebar .winners .tab-link > a:hover{
+    color: #f96e08;
+    opacity: 1;
+}
+.left-sidebar .winners .tab-link .line{
+    height: 1px;
+    background: #dadbc3;
+    display: block;
+    position: relative;
+    width: 80%;
+    margin-bottom: 8px;
+}
+.left-sidebar .winners .tab-link .line i{
+    background: #f96e08;
+    display: block;
+    width: 29px;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    transition: .2s ease;
+}
+
+
+/****[ MAIN CONTENT ]****/
+.main{
+    position: relative;
+}
+.main .premium{
+    background: url(../img/premium.png) no-repeat 22px -1px;
+    width: 290px;
+    height: 122px;
+    margin: 0px auto 0;
+    padding: 43px 0px 0;
+}
+.main .premium > a{
+    display: block;
+    width: 210px;
+    height: 36px;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+.main .home-link{
+    display: block;
+    width: 450px;
+    height: 104px;
+    margin: 0px auto 0;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+}
+
+
+/****[ EVENTS LIST ]****/
+.main .events{
+
+}
+.main .events .heading{
+    display: block;
+    background: url(../img/events.png) no-repeat 12px 0px;
+    width: 191px;
+    height: 85px;
+    margin: -33px auto 0px;
+}
+.main .events-list{
+    background: url(../img/events-frame.png) no-repeat -18px 0px;
+    width: 100%;
+    height: 207px;
+    margin: -49px auto 0px;
+    padding: 29px 46px 21px 42px;
+    border-radius: 5px;
+}
+.main .events-list ul{
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    padding-top: 2px;
+}
+.main .events-list ul li{
+    padding: 11px 6px 9px 10px;
+    
+}
+.main .events-list ul li.active{
+    background-color: rgba(255, 234, 182, .27);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.75);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,.75);
+    box-shadow: 0 2px 1px -2px rgba(0,0,0,.75);
+}
+.main .events-list .event-text{
+    float: left;
+    
+}
+.main .events-list ul .event-text > a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #65411d;
+    text-shadow: 1px 1px 1px rgba(68,40,13,.31);
+}
+.main .events-list ul .event-text > a:hover{
+    text-decoration: underline;
+}
+.main .events-list ul .event-text > a > b{
+    text-shadow: none;
+}
+span.red{
+    color: #ff4200;
+}
+span.green{
+    color: #599326;
+}
+.events-list .event-text .subtext{
+    display: block;
+    color: #826d58;
+    font-size: 9px;
+}
+.event-text .subtext > a{
+    color: #ef6f3c;
+    font-size: 9px;
+}
+.main .events-list .event-icon{
+    background: url(../img/event-frame.png) no-repeat 0px 0px;
+    width: 104px;
+    height: 34px;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    margin-top: -2px;
+    padding: 2px 5px 4px 3px;
+}
+.main .events-list .event-icon img{
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/****[ NEWS ]****/
+.main .news{
+
+}
+.main .news .heading{
+    display: block;
+    background: url(../img/news.png) no-repeat 12px 0px;
+    width: 191px;
+    height: 86px;
+    margin: -29px auto 0px;
+}
+.news .news-item{
+    padding: 7px 43px 0px 60px;
+
+}
+.news .news-item .news-header{
+    border-bottom: 1px solid #ccc6a0;
+}
+.news-item .news-header h3{
+    float: left;
+    font-weight: normal;
+    color: #675627;
+    margin: 0;
+    padding-left: 2px;
+}
+.news-item .news-header h3 > a{
+    color: inherit;
+    font-size: 18px;
+    font-family: "Philosopher"; 
+    line-height: 20px;
+    text-decoration: none;
+}
+.news-item .news-header h3 > a:hover{
+    text-decoration: underline;
+}
+.news-item .news-header .date{
+    float: right;
+    color: #675627;
+    opacity: .6;
+    font-size: 13px;
+    margin-top: 3px;
+    font-family: "Philosopher";
+}
+.news .news-item .news-inner{
+    border-top: 1px solid #e1dcbf;
+    padding: 17px 0 0;
+}
+.news-item .news-inner .subhead{
+    text-align: center;
+    color: #f96e08;
+    font-size: 16px;
+    font-family: "Philosopher";
+    display: block;
+    margin-bottom: 4px;
+}
+.news-item .news-inner .subhead:last-child{
+    
+}
+.news-item .news-inner p{
+    line-height: 12px;
+    text-shadow: 0 1px rgba(255,235,184,.7);
+}
+.news-item .news-inner > b{
+    
+}
+.news-item .news-inner .news-ul{
+    padding: 0;
+    margin: 7px 0px 20px 4px;
+    list-style-type: none;
+}
+.center{
+    text-align: center;
+}
+.news-item .news-inner .news-ul li{
+    background: url(../img/news-list.png) no-repeat 0px  2px;
+    padding: 0px 0px 0px 12px;
+    margin-bottom: 5px;
+    line-height: 12px;
+}
+.news-item .news-inner p > a{
+    font-size: 11px;
+}
+.news-item .news-inner .news-video{
+    margin-top: 25px;
+    background: url(../img/video-frame.png) no-repeat 0px 0px;
+    width: 378px;
+    height: 318px;
+    padding: 1px 0px 0px 2px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+.news-inner .news-video .vid-inner{
+    width: 374px;
+    
+    margin: 0px 0px 0px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.news-item .news-footer{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 27px;
+    border: 1px solid #998667;
+    overflow: hidden;
+    background: rgba(106, 72, 41, .1);
+    font-size: 10px;
+    color: #6a4829;
+    margin: 19px 3px 0px -1px;
+    padding: 6px 0px 0px 5px;
+}
+.news-item .news-footer .author{
+    border-right: 1px solid #b3a787;
+    padding-right: 3px;
+    font-weight: bold;
+}
+.news-item .news-footer .author a{
+    color: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
+.news-item .news-footer .comments{
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 9px 2px;
+    border-right: 1px solid #b3a787;
+    padding-left: 23px;
+    padding-right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+.news-item .news-footer .share{
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    background-position: 2px -47px;
+    floatont-weight: bold;
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+.news-item .news-footer .detail{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 59px -88px;
+    float: right;
+    margin-right: 9px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.news-item .news-footer .detail span{
+    color: inherit;
+    text-decoration: underline;
+}
+.news-item .news-footer .detail:hover span{
+    text-decoration: none;
+}
+
+
+/****[ RIGHT SIDEBAR ]****/
+.right-sidebar .lk{
+    background: url(../img/lk.png) no-repeat 0px 0px;
+    width: 179px;
+    height: 189px;
+    margin: -18px 0px 0px 88px;
+    display: block;
+    transition: .2s ease;
+}
+.right-sidebar .lk:hover{
+    background: url(../img/lk_hover.png) no-repeat 0px 0px;
+}
+.right-sidebar .servers{
+    background: url(../img/servers.png) no-repeat -13px -22px;
+    width: 214px;
+    height: 350px;
+    margin: 0px 0px 0px 0;
+}
+.servers .server{
+    padding: 4px 37px 0px 81px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+.servers .server + .server{
+    margin-bottom: 27px;
+}
+.servers .server + .server + .server{
+    margin-bottom: 25px;
+    
+}
+.servers .server .status-block{
+    width: 94px;
+    height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+    margin: 6px 0px 0px 1px;
+    padding: 2px 0px 0px 0px;
+}
+.servers .server .name{
+    text-decoration: none;
+    color: #5e4b37;
+    font-family: "Philosopher";
+    font-size: 15px;
+}
+.servers .server .status{
+    font-size: 9px;
+    font-weight: bold;
+    color: #2a8b08;
+    text-transform: uppercase;
+    padding-left: 18px;
+    background-image: url(../img/server-status.png);
+    background-repeat: no-repeat;
+    background-position: 2px 0px;
+    float: left;
+    height: 100%;
+    padding-top: 3px;
+}
+.servers .server .cnt{
+    font-size: 11px;
+    color: #4d6a4c;
+    margin-left: 19px;
+}
+.servers .server.offline .status{
+    background-position: 2px -76px;
+    color: #8b1108;
+    padding-top: 4px;
+}
+.servers .server.offline .cnt{
+    color: #835a57;
+    font-size: 9px;
+    line-height: 20px;
+    margin-left: 17px;
+}
+.servers .server.soon .status{
+    display: none;
+}
+.servers .server.soon .cnt{
+    background: #ff621d;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 9px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 1px;
+}
+.servers .server.soon .status-block{
+    height: 22px;
+
+    width: 95px;
+}
+
+.right-sidebar .last-forum{
+    margin: 144px 72px 0px 0px;
+
+}
+.last-forum h4{
+    text-shadow: 1px 1px 1px #110c00;
+    color: #ffffd8;
+    font-family: "Philosopher";
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .04em;
+    padding-left: 11px;
+    opacity: .9;
+    text-align: right;
+    margin: 0;
+    padding-right: 10px;
+}
+.last-forum .forum-list{
+    list-style-type: none;
+    margin: 31px 0px 0px 40px;
+    padding: 0;
+    max-width: 179px;
+}
+.forum-list li{
+    border-bottom: 1px solid rgba(190, 169, 136, .2);
+    padding: 0px 0px 11px 0px;
+    margin-bottom: 12px;
+}
+.forum-list li:last-child{
+    border-bottom: none;
+}
+.forum-list .name{
+    background: url(../img/sprite.png) no-repeat 0px -156px;
+    padding-left: 19px;
+    display: block;
+    margin-bottom: 1px;
+}
+.forum-list .name > a{
+    color: #ea6300;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 137px;
+    display: inline-block;
+    vertical-align: -3px;
+}
+.forum-list .detail{
+    color: #6d5236;
+    font-size: 10px;
+}
+.forum-list .detail > a{
+    color: #9f7e5c;
+    font-size: inherit;
+}
+
+
+/****[ FOOTER ]****/
+#footer{
+    margin-top: 51px;
+
+    padding: 0px 0px 0px 92px;
+}
+#footer .footer-top{
+
+}
+#footer .footer-logo{
+    width: 95px;
+    height: 27px;
+    background: url(../img/footer-logo.png) no-repeat 0px 0px;
+
+    display: block;
+    margin-top: 1px;
+}
+#footer .footer-left{
+    background: url(../img/footer-left.png) no-repeat right top;
+    height: 72px;
+    float: left;
+    width: 119px;
+}
+#footer .footer-right{
+    
+    overflow: hidden;
+    padding: 5px 0px 0px 16px;
+}
+#footer .footer-right .footer-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    padding-left: 0px;
+}
+#footer .footer-menu li{
+    /* border-right: 1px solid #ebe3d1; */
+    float: left;
+    margin-bottom: 6px;
+}
+#footer .footer-menu li a{
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9f1e2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    letter-spacing: .02em;
+    border-right: 1px solid #ebe3d1;
+    padding: 0 5px;
+    float: left;
+    line-height: 10px;
+    font-weight: bold;
+}
+#footer .footer-menu li + li > a{
+    border-right: none;
+}
+#footer .footer-menu li + li + li > a{
+    border-right: 1px solid #ebe3d1;
+}
+#footer .footer-menu li:last-child > a{
+    border-right: none;
+}
+
+#footer .footer-right .footer-copyright{
+    color: #f9f1e2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    font-size: 10px;
+    display: block;
+    margin-top: 17px;
+    padding-left: 3px;
+    margin-bottom: 9px;
+}
+#footer .footer-right .footer-copyright > a{
+    color: #f9f1e2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    text-decoration: none;
+    font-size: inherit;
+}
+#footer .footer-right .footer-rights{
+    color: #f9f1e2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    font-size: 10px; 
+    padding-left: 3px;
+}
+#footer .footer-right .footer-bottom{
+    
+    margin: 27px 0px 0px 8px;
+}
+#footer .footer-bottom .part-1{
+    width: 100px;
+    height: 21px;
+    background: url(../img/part-1.png) no-repeat;
+    display: block;
+}
+#footer .footer-bottom .partners{
+    margin-top: 17px;
+    
+}
+#footer .footer-bottom .partners > p{
+    font-family: "Philosopher";
+    font-size: 7px;
+    /* font-weight: bold; */
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.47);
+    margin: 0;
+    text-transform: uppercase;
+    width: 134px;
+    line-height: 8px;
+    float: left;
+}
+#footer .footer-bottom .partners .part-2{
+    width: 66px;
+    height: 16px;
+    background: url(../img/part-2.png) no-repeat;
+    float: left;
+    margin: -1px 13px 0px 2px;
+}
+#footer .footer-bottom .partners .part-3{
+    width: 17px;
+    height: 17px;
+    background: url(../img/part-3.png) no-repeat;
+    float: left;
+}
+
+
+
+/**** CP PAGE ****/
+.ketra_cp{
+
+}
+.ketra_cp #header{
+    padding: 267px 0 0 0;
+}
+.ketra_cp #header .header-lang{
+    background: url(../img/cp/lang-back.png) no-repeat center bottom;
+    margin: 0px 6px 0px 0px;
+    height: 126px;
+    position: relative;
+    padding: 75px 0px 0px 36px;
+    z-index: 5;
+    width: 169px;
+}
+.ketra_cp #header .header-lang .shadow{
+    background: url(../img/cp/smoke1.png) no-repeat center 0px;
+    width: 172px;
+    height: 153px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: .8; */
+}
+.ketra_cp #header .forum-btn{
+    width: 83px;
+    height: 28px;
+    float: right;
+    background: url(../img/cp/forum-btn.png) no-repeat;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: center;
+    margin: 79px 108px 0px 0px;
+    position: relative;
+    z-index: 10;
+    opacity: .8;
+    transition: opacity .2s ease;
+    -webkit-transform: translateZ(0);
+}
+.ketra_cp #header .forum-btn:hover{
+    opacity: 1;
+}
+.ketra_cp #content{
+    padding-top: 21px;
+    
+    padding-bottom: 32px;
+}
+.ketra_cp #content .main{
+    margin: 0px auto;
+    float: none;
+    width: 560px;
+}
+.main .cp-wrap{
+    
+}
+.main .cp-wrap .heading{
+    background: url(../img/cp/form-top.png) no-repeat 0px 0px;
+    width: 464px;
+    height: 74px;
+    font-size: 15px;
+    color: #684f23;
+    font-weight: bold;
+    padding: 31px 0px 0px 102px;
+}
+.main .form-cp{
+    background: url(../img/cp/form-frame.png) no-repeat 0px 0px;
+    width: 369px;
+    height: 424px;
+    margin: -8px 0px 0px 59px;
+    padding: 31px 29px 0px 46px;
+}
+.form-cp label{
+    font-size: 14px;
+    color: #6e5f45;
+    display: block;
+    margin-bottom: 8px;
+}
+.form-cp input[type=text],
+.form-cp input[type=password]{
+    background: url(../img/cp/input.png) no-repeat;
+    width: 285px;
+    height: 33px;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0px 14px;
+    font-size: 16px;
+    margin-bottom: 21px;
+}
+.form-cp input[type=submit]{
+    background: url(../img/cp/submit.png) no-repeat;
+    width: 287px;
+    height: 38px;
+    color: #fff;
+    font-family: "Philosopher-bold";
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    margin-top: 14px;
+    outline: none;
+    opacity: .8;
+    transition: .2s ease;
+    -webkit-transform: translateZ(0);
+}
+.form-cp input[type=submit]:hover{
+    opacity: 1;
+}
+.form-cp .captcha{
+
+}
+.form-cp .captcha label{
+    
+}
+.form-cp .captcha input[type=text]{
+    padding-right: 115px;
+    
+    margin-bottom: 0;
+}
+.form-cp .captcha .captcha-img{
+    position: relative;
+    
+}
+.form-cp .captcha .captcha-img > img{
+    position: absolute;
+    
+    right: 10px;
+    top: 1px;
+}
+.form-cp .form-bottom{
+    margin: 40px 2px 0px 0px;
+
+    text-align: right;
+    float: right;
+}
+.form-cp .form-bottom > div{
+    margin-bottom: 5px;
+    
+}
+.form-cp .form-bottom a{
+    font-size: 13px;
+    
+    color: #fef5b5;
+    text-decoration: none;
+    background: url(../img/cp/form-arrow.png) no-repeat right 7px;
+    padding-right: 12px;
+}
+.form-cp .form-bottom a:hover{
+    text-decoration: underline;
+}
+.form-cp .form-bottom .pass-recover{
+    
+}
+.form-cp .form-bottom .prefix-recover{
+    
+}
+.form-cp .form-bottom > span{
+    color: #49382c;
+    
+    font-weight: bold;
+}
+.form-cp .form-bottom .reg{
+    
+}
+.ketra_cp #footer{
+    padding: 0 40px;
+    
+    margin-top: 114px;
+}
+.ketra_cp #footer .footer-left{
+    background: none;
+
+    height: auto;
+    width: auto;
+    margin-top: -6px;
+}
+.ketra_cp #footer .footer-right{
+    float: right;
+    padding: 0;
+}
+.ketra_cp #footer .footer-right .footer-menu{
+    width: auto;
+    
+    float: left;
+    margin-top: 0px;
+    margin-right: 30px;
+    height: 20px;
+    border-right: 1px solid #a89b7b;
+    padding: 5px 0px;
+}
+.ketra_cp #footer .footer-menu li a{
+    font-family: "Philosopher";
+    font-size: 14px;;
+    text-transform: none;
+    font-weight: normal;
+    padding: 0;
+    border: none;
+    /* line-height: 20px; */
+}
+.ketra_cp #footer .footer-right .footer-bottom{
+    margin: 0;
+    
+    float: right;
+}
+.ketra_cp #footer .footer-bottom .partners{
+    float: right;
+    margin: 0;;
+    margin-top: 5px;
+}
+.ketra_cp #footer .footer-bottom .part-1{
+    float: left;
+    margin: 0px 24px 0px 0px;
+}
+.ketra_cp #footer .footer-bottom .partners .part-2{
+    margin-top: -1px;
+}
+.ketra_cp #footer .footer-menu li{
+    border-right: 1px solid #ebe3d1;
+    padding: 0 26px;
+    height: 13px;
+}
+.ketra_cp #footer .footer-menu li:last-child{
+    border: none;
+}
+
+
+/**** INSIDE PAGE ****/
+.ketra_lk{
+    background: #e2dec2;
+}
+.ketra_lk #header{
+    padding: 0px 0 0 0;
+}
+.ketra_lk #header .header-logo{
+    background: url(../img/lk/header-logo.png) no-repeat;
+    width: 162px;
+    height: 52px;
+    float: left;
+    margin: 8px 0px 0px 35px;
+}
+.ketra_lk #header .header-lang{
+    background: url(../img/lk/lang-back.png) no-repeat center bottom;
+    margin: 0px 53px 0px 0px;
+    height: 109px;
+    position: relative;
+    padding: 29px 0px 0px 36px;
+    z-index: 5;
+    width: 179px;
+}
+.ketra_lk #header .forum-btn{
+    width: 83px;
+    height: 28px;
+    float: right;
+    background: url(../img/cp/forum-btn.png) no-repeat;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: center;
+    margin: 16px 0px 0px 0px;
+    position: relative;
+    z-index: 10;
+}
+.ketra_lk #content{
+    padding-top: 0px;
+    padding-bottom: 32px;
+    margin-top: -54px;
+}
+.ketra_lk #content .main{
+    margin: 0;
+    float: none;
+    background: url(../img/lk/main-frame.png) no-repeat, #f2eedf;
+    width: 925px;
+    height: 1017px;
+    margin-left: 222px;
+}
+.ketra_lk .wrapper{
+    width: 1148px;
+    margin: 0;
+}
+.ketra_lk .lk-side{
+    width: 222px;
+
+    float: left;
+    padding: 25px 0px 0px 0;
+}
+.ketra_lk .lk-menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ketra_lk .lk-menu li{
+    min-height: 50px;
+    line-height: 50px;
+}
+.ketra_lk .lk-menu li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #6e5f45;
+    text-decoration: none;
+    /* margin-left: 15px; */
+    display: block;
+    padding: 0px 0px 0px 22px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s ease;
+}
+.ketra_lk .lk-menu li a:hover{
+    border-color: #efd871;
+    color: #fff;
+    background-color: #c5ba91;
+}
+.ketra_lk .lk-menu li i{
+    font-size: 14px;
+
+    margin-right: 12px;
+    width: 16px;
+    text-align: center;
+}
+.ketra_lk .lk-menu .submenu{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* padding-left: 30px; */
+}
+.ketra_lk .submenu li a{
+    padding-left: 50px;
+}
+
+
+@media (max-width: 1108px){
+    body.ketra_main{
+        background-image: url(../img/back_small.jpg);
+        background-position: top left;
+    }
+    body.ketra_cp{
+        background-image: url(../img/cp_back_small.jpg);
+        background-position: top left;
+    }
+}
+
+
